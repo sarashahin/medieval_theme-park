@@ -1,2 +1,7 @@
-# medieval_theme-park
-University of London, BSc Computer Science, Web development group project
+# The Medieval Theme Park
+
+Web Development
+by University of London & Goldsmiths, University of London
+
+Group project.
+April 2020 , Goldsmith 
