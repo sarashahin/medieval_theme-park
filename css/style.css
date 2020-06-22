@@ -1,0 +1,91 @@
+/* Reset browser default styles */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "lato", sans-serif;
+    font-weight:400;
+    font-size:16px;
+    line-height:1.7;
+    color: #777;
+    padding:30px;
+}
+
+/* header styles start */
+
+.header{
+    position: relative;
+    height:95vh;
+    background-image: linear-gradient(to right bottom, #f3f17760,#ffbf0038 ) , url(../img/header.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.logo-box{
+    position: absolute;
+    top:40px;
+    left:40px;
+}
+
+.header__logo{
+    height:100px;
+}
+
+.header__text-box{
+    position: absolute;
+    top:15%;
+    left:40%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-primary{
+    color: rgb(94, 39, 3);
+    background: rgba(255, 255, 255, 0.35);
+    padding: 5px 15px;
+    border-radius: 5px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+
+}
+
+.heading-primary-main{
+    font-family: 'MedievalSharp', cursive;
+    display: block;
+    font-size: 50px;
+    letter-spacing: 5px;
+
+}
+
+.heading-primary-sub{
+    display: block;
+    font-size: 26px;
+    font-weight: 700;
+    word-spacing: 8px;
+    letter-spacing: 10px;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity:0%;
+        transform: translateY(-200px);
+    }
+
+    100%{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+
+
+
+/* header styles end */
+
+area{
+    border:2px solid red;
+}

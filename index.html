@@ -1,180 +1,183 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name ="description" content="This is the website for The Medieval Theme Park.">
+        <meta name ="author" content ="Web Development Group 54">
+        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">      
+        <title>The Medieval Theme Park | A fun place for all the family!</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo-box">
+                <img src="img/icon.svg" alt="Medieval Theme Park logo" class="header__logo">
+            </div>
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary-main">The Medieval Theme Park</span>
+                    <span class="heading-primary-sub">A fun place for all the family!</span>
+                </h1>
+            </div>
 
-<!--This head section contains all the invisible information about the page. -->
-<head>
-    <title> The Medieval Theme Park - Home </title>
-    <meta charset = "utf-8">
-    <meta name ="description" content="This is a website for The Medieval Theme Park.">
-    <meta name ="author" content ="Web Development Group 54">
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name ="refresh" content ="600">
-    <meta name ="keywords" content="Medieval, theme park">
-</head>
+        </header>
 
-<!-- This body section contains the structure for all the visble content -->
-<body>
-<header>
-    <a href = index.html><object data="img/icon.svg" width="550" height="192"></object></a>
-    <h1>The Medieval Theme Park - Home Page</h1>
-</header>
-    
-<!-- The nav tag is used to show this section is for navigation of the website -->
-<nav>
-    <!-- This is an ordered list that has links to the other webpages -->
-    <ol>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="PlanYourTrip.html">Plan Your Trip</a></li>
-        <li><a href="AboutUs.html">About Us</a></li>
-    </ol>
-</nav>
-    
-    <!--The hr tag is used to draw a horizontal like across the screen in order to seperate the main body of content from the header and footer-->
-    <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="PlanYourTrip.html">Plan Your Trip</a></li>
+                <li><a href="AboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
 
-<div id="themeParkIntro">
-    <div id ="introTitle">
-        <p> Welcome to The Medieval Theme Park! </p>
-    </div>
-    <div id ="introText">
-        <!--the p tag is for adding blocks of text-->
-        <!--the br tag is used to break up the text onto a new line-->
-        <p> Are you a fan of the medieval ages? Do you enjoy thrilling rides? 
-            <br>
-            Looking for a cool place to spend time with your loved ones? 
-            <br>
-            If any of the answers is yes, then you have to check The Medieval Theme Park! 
-            <br>
-            This is the first and only theme park in the world about the medieval europe. 
-            <br>
-            You can find more information on this website.
-    </div>
-   
-</div>
-    
-    <!--the div tag is used to set all code within it as one object--> 
-    <!--the img tag for sourcing a image to display on the webpage-->
-    <!--the map tag is used to create areas on the image that are clickable-->
-    <!--the area tag is a part of the map tag that is used to define the clickable areas on the image-->
-<div id="ThemeParkMap">
-    <img src="img/ThemeParkMap.jpg" alt="Theme Park Map" width="1024" height ="682" usemap="#themeparkmap">
-    <map name = "themeparkmap">
-        <area shape="circle" coords="400,400,30" alt="Ride 1" href="#Ride1">
-        <area shape="circle" coords="800,300,30" alt="Ride 2" href="#Ride2">
-        <area shape="circle" coords="300,160,30" alt="Ride 3" href="#Ride3">
-        <area shape="circle" coords="200,330,30" alt="Ride 4" href="#Ride4">
-        <area shape="circle" coords="600,100,30" alt="Ride 5" href="#Ride5">
-        <area shape="circle" coords="700,400,30" alt="Show 1" href="#Show1">
-    </map>
-</div>
-    
+        <main>
+            <section class="section-welcome">
+                <h2>Welcome to The Medieval Theme Park!</h2>
+                <p>Are you a fan of the medieval ages? Do you enjoy thrilling rides?</p>
+                <p>Looking for a cool place to spend time with your loved ones?</p>
+                <p>If any of the answers is yes, then you have to check The Medieval Theme Park!</p>
+                <p>This is the first and only theme park in the world about the medieval europe.</p>
+                <p>You can find more information on this website.</p>
+            </section>
 
-<!-- Each of the ride and show is coded in a seperate pair of div tags -->
-<div class = "activity">
-    <a id="Ride1"></a>
-    <div class = "activityTitle">
-        <h2>Ride 1</h2>
-    </div>
-    <div class="activityDescription">
-        <p>This is the first ride of the park.</p>
-    </div>
-    <div class = "activityPic">
-        <img src="img/ride1.jpg" alt="Ride 1 Image" width = "300" height= "200">
-    </div>
-</div>
-    
-<div class = "activity">
-    <a id="Ride2"></a>
-    <div class = "activityTitle">
-        <h2>Ride 2</h2>
-    </div>
-    <div class="activityDescription">
-        <p>This is the second ride of the park.</p>
-    </div>
-    <div class = "activityPic">
-        <img src="img/ride2.jpg" alt="Ride 2 Image" width = "300" height= "200">
-    </div>
-</div>
-    
-<div class = "activity">
-    <a id="Ride3"></a>
-    <div class = "activityTitle">
-        <h2>Ride 3</h2>
-    </div>
-    <div class="activityDescription">
-        <p>This is the third ride of the park.</p>
-    </div>
-    <div class = "activityPic">
-        <img src="img/ride3.jpg" alt="Ride 3 Image" width = "300" height= "200">
-    </div>
-</div>
+            <!--the map tag is used to create areas on the image that are clickable-->
+            <!--the area tag is a part of the map tag that is used to define the clickable areas on the image-->
+            <!--the area tag doesn't work, needs fixing...-->
+            <section id="section-map">
+                <img src="img/ThemeParkMap.jpg" alt="Theme Park Map" width="1024" height ="682" usemap="#themeparkmap">
+                <map name = "themeparkmap">
+                    <area shape="circle" coords="400,400,30" alt="Ride 1" href="#Ride1">
+                    <area shape="circle" coords="800,300,30" alt="Ride 2" href="#Ride2">
+                    <area shape="circle" coords="300,160,30" alt="Ride 3" href="#Ride3">
+                    <area shape="circle" coords="200,330,30" alt="Ride 4" href="#Ride4">
+                    <area shape="circle" coords="600,100,30" alt="Ride 5" href="#Ride5">
+                    <area shape="circle" coords="700,400,30" alt="Show 1" href="#Show1">
+                </map>
+            </section>
 
-<div class = "activity">
-    <a id="Ride4"></a>
-    <div class = "activityTitle">
-        <h2>Ride 4</h2>
-    </div>
-    <div class="activityDescription">
-        <p>This is the fourth ride of the park.</p>
-    </div>
-    <div class = "activityPic">
-        <img src="img/ride4.jpg" alt="Ride 4 Image" width = "300" height= "200">
-    </div>
-</div>
-    
-<div class = "activity">
-    <a id="Ride5"></a>
-    <div class = "activityTitle">
-        <h2>Ride 5</h2>
-    </div>
-    <div class="activityDescription">
-        <p>This is the fifth ride of the park.</p>
-    </div>
-    <div class = "activityPic">
-        <img src="img/ride5.jpg" alt="Ride 5 Image" width = "300" height= "200">
-    </div>
-</div>
-    
-<div class = "activity">
-    <a id="Show1"></a>
-    <div class = "activityTitle">
-        <h2>Show 1</h2>
-    </div>
-    <div class="activityDescription">
-        <p>This is the first show of the park.</p>
-    </div>
-    <div class = "activityPic">
-        <img src="img/show1.jpg" alt="Show 1 Image" width = "300" height= "200">
-    </div>
-</div>
-<!--the footer contains other navigational links and information at the bottom of the page-->
-    <hr>
-<footer>
-    <h3>Useful Links</h3>
-    <div id ="themeParkFooter">
-        <ul>
-            <li id = "Plan"><a href="PlanYourTrip.html">Plan Your Trip</a> </li>
-            <li id = "About"><a href="AboutUs.html">About Us</a> </li>
-        </ul>
-    </div>
-   
-        <h3>Our Social Media Links</h3>
-        <!--we have no real links to pages these are just exmaples that go to the home pages of the websites-->
-        <ul>
-            <li>
-                <a href = "https://www.youtube.com/">
-                    <img src="img/YouTube_Logo.png" alt="Theme Park" width="30" height="30">
-                </a>
-            </li>
-            <li>
-                <a href = "https://www.facebook.com/">
-                    <img src="img/Facebook_Logo.png" alt="Theme Park" width="30" height="30">
-                </a>
-            </li>
-        </ul>
-    
-    </footer>
-    
+            <section class="section-activity">
+                <p>Activities and rides here...</p>
+
+                <!--some errors will fix later-->
+
+
+                <div class = "activity">
+                    <a id="Ride1"></a>
+                    <div class = "activityTitle">
+                        <h2>Ride 1</h2>
+                    </div>
+                    <div class="activityDescription">
+                        <p>This is the first ride of the park.</p>
+                    </div>
+                    <div class = "activityPic">
+                        <img src="img/ride1.jpg" alt="Ride 1 Image" width = "300" height= "200">
+                    </div>
+                </div>
+                    
+                <div class = "activity">
+                    <a id="Ride2"></a>
+                    <div class = "activityTitle">
+                        <h2>Ride 2</h2>
+                    </div>
+                    <div class="activityDescription">
+                        <p>This is the second ride of the park.</p>
+                    </div>
+                    <div class = "activityPic">
+                        <img src="img/ride2.jpg" alt="Ride 2 Image" width = "300" height= "200">
+                    </div>
+                </div>
+                    
+                <div class = "activity">
+                    <a id="Ride3"></a>
+                    <div class = "activityTitle">
+                        <h2>Ride 3</h2>
+                    </div>
+                    <div class="activityDescription">
+                        <p>This is the third ride of the park.</p>
+                    </div>
+                    <div class = "activityPic">
+                        <img src="img/ride3.jpg" alt="Ride 3 Image" width = "300" height= "200">
+                    </div>
+                </div>
+                
+                <div class = "activity">
+                    <a id="Ride4"></a>
+                    <div class = "activityTitle">
+                        <h2>Ride 4</h2>
+                    </div>
+                    <div class="activityDescription">
+                        <p>This is the fourth ride of the park.</p>
+                    </div>
+                    <div class = "activityPic">
+                        <img src="img/ride4.jpg" alt="Ride 4 Image" width = "300" height= "200">
+                    </div>
+                </div>
+                    
+                <div class = "activity">
+                    <a id="Ride5"></a>
+                    <div class = "activityTitle">
+                        <h2>Ride 5</h2>
+                    </div>
+                    <div class="activityDescription">
+                        <p>This is the fifth ride of the park.</p>
+                    </div>
+                    <div class = "activityPic">
+                        <img src="img/ride5.jpg" alt="Ride 5 Image" width = "300" height= "200">
+                    </div>
+                </div>
+                    
+                <div class = "activity">
+                    <a id="Show1"></a>
+                    <div class = "activityTitle">
+                        <h2>Show 1</h2>
+                    </div>
+                    <div class="activityDescription">
+                        <p>This is the first show of the park.</p>
+                    </div>
+                    <div class = "activityPic">
+                        <img src="img/show1.jpg" alt="Show 1 Image" width = "300" height= "200">
+                    </div>
+                </div>
+
+
+
+            </section>
+
+
+            <footer>
+                <h3>Useful Links</h3>
+                <div id ="themeParkFooter">
+                    <ul>
+                        <li id = "Plan"><a href="PlanYourTrip.html">Plan Your Trip</a> </li>
+                        <li id = "About"><a href="AboutUs.html">About Us</a> </li>
+                    </ul>
+                </div>
+               
+                    <h3>Our Social Media Links</h3>
+                    <!--we have no real links to pages these are just exmaples that go to the home pages of the websites-->
+                    <ul>
+                        <li>
+                            <a href = "https://www.youtube.com/">
+                                <img src="img/YouTube_Logo.png" alt="Theme Park" width="30" height="30">
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://www.facebook.com/">
+                                <img src="img/Facebook_Logo.png" alt="Theme Park" width="30" height="30">
+                            </a>
+                        </li>
+                    </ul>
+                
+                </footer>
+
+
+
+        </main>
+        
+        
     </body>
 </html>
-
