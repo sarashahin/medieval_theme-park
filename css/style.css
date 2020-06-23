@@ -38,9 +38,10 @@ body{
 
 .header__text-box{
     position: absolute;
-    top:15%;
+    top:40%;
     left:40%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary{
@@ -50,6 +51,7 @@ body{
     border-radius: 5px;
     animation-name: fadeIn;
     animation-duration: 2s;
+    margin-bottom: 60px;
 
 }
 
@@ -69,10 +71,53 @@ body{
     letter-spacing: 10px;
 }
 
+.btn:link,
+.btn:visited{
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 50px;
+    transition:all .2s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    background-color: goldenrod;
+    color: #fff;
+    font-weight: bolder;
+}
+
+.btn:active{
+    transform:translateY(-1px);
+}
+
+.btn-white{
+    background-color: aliceblue;
+    color: darkslategrey;
+}
+
+.btn-animated{
+    animation: moveInBtn .5s ease-out .75s;
+    animation-fill-mode: backwards;
+
+}
+
 @keyframes fadeIn{
     0%{
         opacity:0%;
         transform: translateY(-200px);
+    }
+
+    100%{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes moveInBtn{
+    0%{
+        opacity:0%;
+        transform: translateY(30px);
     }
 
     100%{
