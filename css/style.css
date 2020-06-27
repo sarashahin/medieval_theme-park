@@ -138,9 +138,9 @@ body{
   }
   
   .nav-link::before {
+    content: "";
     transition: 300ms;
     height: 5px;
-    content: "";
     position: absolute;
     background-color: #f3f17760;
   }
@@ -185,7 +185,7 @@ body{
 /* section-welcome styles start */
 .section-welcome{
     background-color: #f7f7f7;
-    padding: 150px 0;
+    padding: 150px 0 150px;
     margin-top: -20vh;
 }
 
@@ -196,38 +196,115 @@ body{
     background-image: linear-gradient(to right, #c24c4c, #5e0000 );
     display: inline-block;
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
-    transition: all .2s ;
+    transition: all .2s;
 }
 
 .heading-secondary:hover{
     transform: skewX(-10deg);
+    text-shadow: 5px 10px 20px rgba(0,0,0,.2);
 }
 
 .section-welcome-content-wrapper {
     margin: 15px;
-    font-size: 20px;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%; /* no fixed width */ 
+    min-height: 400px; /*add min-height for 1 column layout */
+
   }
 
-.section-welcome-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.section-welcome-column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+.text-content{
+    padding: 0 30px 20px;
 }
 /* section-welcome styles end */
+
+/* section-rides styles begin */
+
+.section-rides{
+    background-color: rgba(189, 146, 83,.3);
+    padding: 150px 0 30px;
+    transform: skewY(-7deg);
+    margin-top: -85px;
+}
+
+/*after skew we need the direct children to skew back*/
+.section-rides > * {
+    transform: skewY(7deg);  
+}
+
+.rides-container{
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+   
+}
+
+.card{
+    perspective: 1500px;
+    /*to make perspective work in firefox*/
+    -moz-perspective: 1500px;
+    position: relative;
+    height:500px;
+}
+
+.card:hover .card__side--front{
+    transform:rotateY(180deg);
+}
+
+.card:hover .card__side--back{
+    transform:rotateY(0deg);
+}
+
+.card__side{
+    position: absolute;
+    top:0;
+    left: 0;
+    height:500px;
+    width: 300px;
+    backface-visibility: hidden;
+
+    color: floralwhite;
+    font-size: 20px;
+
+    transition:all .8s;
+
+}
+
+.card__side--front{
+    background-color: orangered;
+}
+
+.card__side--back{
+    background-color: aquamarine;
+    transform:rotateY(180deg);
+}
+
+/* section-rides styles end */
+
+
+
+
 
 /* Utility classes */
 
 .u-center-text{
     text-align: center;
+}
+
+.u-margin-bottom-small{
+    margin-bottom: 20px;
+}
+
+.u-margin-bottom-medium{
+    margin-bottom: 40px;
+}
+
+.u-margin-bottom-large{
+    margin-bottom: 60px;
 }
 
 area{
