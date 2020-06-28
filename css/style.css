@@ -225,8 +225,8 @@ body{
 /* section-rides styles begin */
 
 .section-rides{
-    background-color: rgba(189, 146, 83,.3);
-    padding: 150px 0 30px;
+    background-color: rgba(189, 146, 83,.7);
+    padding: 150px 0 110px;
     transform: skewY(-7deg);
     margin-top: -85px;
 }
@@ -240,6 +240,8 @@ body{
     display: flex;
     justify-content: space-around;
     width: 70vw;
+    flex-wrap: wrap;
+
    
 }
 
@@ -252,7 +254,7 @@ body{
 }
 
 .card:hover .card__side--front{
-    transform:rotateY(180deg);
+    transform:rotateY(-180deg);
 }
 
 .card:hover .card__side--back{
@@ -266,24 +268,225 @@ body{
     height:500px;
     width: 300px;
     backface-visibility: hidden;
-
-    color: floralwhite;
-    font-size: 20px;
-
     transition:all .8s;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,.5) ;
 
 }
 
 .card__side--front{
-    background-color: orangered;
+    background-color: antiquewhite;
 }
 
+
 .card__side--back{
-    background-color: aquamarine;
+    background-color: #3219196f;
     transform:rotateY(180deg);
 }
 
+/* card FRONT side styling */
+
+.card__picture{
+    background-size: cover;
+    height: 230px;
+    /*blend mode does not work in IE */
+    background-blend-mode: soft-light;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100% );
+}
+.card__picture--1{
+    background-image: linear-gradient(to right bottom, #c24c4c, #5e0000 ),url(../img/ride1.jpg);
+}
+
+.card__picture--2{
+    background-image: linear-gradient(to right bottom, #c24c4c, #5e0000 ), url(../img/ride4.jpg);
+}
+
+.card__picture--3{
+    background-image: linear-gradient(to right bottom, #c24c4c, #5e0000 ), url(../img/ride3.jpg);
+}
+
+.card__heading{
+    font-size: 28px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: aliceblue;
+    width: 75%;
+    position: absolute;
+    top:185px;
+    right: 5px;
+}
+
+.card__heading-span{
+    padding: 10px 15px;
+    /*to work in chrome*/
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    background-image: linear-gradient(to right bottom, #c24c4c, #5e0000  );
+}
+
+
+
+.card__details ul {
+    list-style: none;
+    margin-top: 80px; 
+}
+
+.card__details ul li{
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 10px;
+}
+
+.card__details ul li:not(:last-child){
+    border-bottom: 1px solid #cfcfcf;
+}
+
+/* card BACK side styling */
+.card__cta{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+}
+
+.card__price-box{
+    text-align: center;
+    margin-bottom: 80px;
+    color: antiquewhite;
+
+}
+
+.card__price-only{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.card__price-value{
+    font-size: 60px;
+    font-weight: 100;
+}
+
 /* section-rides styles end */
+
+
+
+
+/* Plan Your Trip page styles begin */
+
+address {
+    font-style: italic;
+    font-variant: normal;
+    font-weight: 500;
+    color: #191970;
+}
+
+.divTitle{
+    font-style: normal;
+    font-variant: normal;
+    text-decoration:underline overline dotted black;
+    font-weight: bold;
+    color: #191970;
+}
+
+
+.Transportation table{
+    border: 1px solid black;
+    width:100%;
+}
+.Transportation th{
+    height:50px
+}
+
+.OpeningTimes table{
+   border: 1px solid black;
+    width:30%
+}
+.OpeningTimes tr:nth-child(even){
+    background-color:#E0FFFF;
+}
+
+/* Plan Your Trip page styles ends */
+
+
+
+
+/* ABOUT US Page start */
+
+.ABOUT_US-nav{
+
+    border:2px solid #3e59f1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 5px;
+}
+.About-Us{
+    /* border-bottom:2px solid rgb(63, 59, 59); */
+    /* border-top: 2px solid rgb(255, 255, 255); */
+    /* border:2px solid #3e59f1; */
+    padding-top: 20px;
+    padding-bottom: 38px;
+    padding-left: 15px;
+    margin-top: 5px;
+    /* background-color: #5e0000; */
+    
+
+}
+.AvailableJobs{
+    /* border:2px solid #3e59f1; */
+    /* border-bottom:2px solid rgb(254, 255, 252); */
+    /* border-top: 2px solid rgb(255, 255, 255); */
+    padding-top: 25px;
+    padding-bottom: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 5px;
+
+
+}
+.ContactInfo{
+    /* border-bottom:2px solid rgb(250, 250, 250); */
+
+    /* border:2px solid #3e59f1; */
+    padding-top: 80px;
+    padding-bottom: 45px;
+    padding-left: 15px;
+    margin-top: 5px;
+}
+#DRAGON_IMAGE{
+
+    float: right;
+    
+
+}
+#ABOUT_HEAD{
+    color: #c55a5a;
+}
+.AU_PAGE{
+    background-color: rgb(39, 22, 22);
+}
+.WIZARD_IMAGE{
+
+    float: left;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+.CASTLE_IMG{
+    float: right;
+}
+#map_location {
+    height: 300px; 
+    width: 100%; /* The height is 400 pixels */
+    /* width: 50%;  The width is the width of the web page */
+    background-color: grey;
+    /* float: right; */
+    padding-bottom: 40px;
+   }
+
+
+/* ABOUT US Page end */
 
 
 
@@ -307,6 +510,7 @@ body{
     margin-bottom: 60px;
 }
 
-area{
-    border:2px solid red;
+.u-margin-top-large{
+    margin-top: 60px;
 }
+
