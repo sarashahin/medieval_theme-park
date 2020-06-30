@@ -12,7 +12,8 @@
         <link rel="shortcut icon" type="image/png" href="img/favicon.png">
         <link rel="stylesheet" href="css/style.css">
         <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">      
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">     
         <title>The Medieval Theme Park | Plan Your Trip</title>
     </head>
 <!-- This body section contains the structure for all the visble content -->
@@ -120,29 +121,77 @@
     <hr>
  
 <!--the footer contains other navigational links and information at the bottom of the page-->    
-<footer>
-    <h3>Useful Links</h3>
-    <div  ="themeParkFooter">
-        <ul>
-            <li id = "Home"><a href="index.html">Home</a> </li>
-            <li id = "About"><a href="AboutUs.html">About Us</a> </li>
-        </ul>
+<footer class = "site-footer">
+    <div id="footer-logo">
+        <img src="img/icon.svg">
     </div>
-
-        <h3>Our Social Media Links</h3>
-        <ul>
-            <li>
-                <a href = "https://www.youtube.com/">
-                    <img src="img/YouTube_Logo.png" alt="Theme Park" width="30" height="30">
-                </a>
-            </li>
-            <li>
-                <a href = "https://www.facebook.com/">
-                    <img src="img/Facebook_Logo.png" alt="Theme Park" width="30" height="30">
-                </a>
-            </li>
-        </ul>
     
+    <div id="footer-columnleft" class ="site-footer">
+        <h3>Website Links</h3>
+        <div class="table">
+        <ul class="footer-list">
+            <li><a href="PlanYourTrip.html">Home </a></li>
+            <li><a href="PlanYourTrip.html">Plan Your Trip </a></li>
+            <li><a href="AboutUs.html">About Us </a></li>
+        </ul>
+        </div>
+    </div>   
+   
+    
+    <div id="footer-columnright">
+        <h3>Our Social Media Links</h3>
+        <!--we have no real links to pages these are just exmaples that go to the home pages of the websites-->
+        <div class="table">
+            
+            <a href="#">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                    <i class="fa fa-facebook fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="#">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                    <i class="fa fa-twitter fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="#">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                    <i class="fa fa-twitter fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="#">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                    <i class="fa fa-instagram fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="#">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                    <i class="fa fa-youtube-play fa-stack-1x"></i>
+                </span>
+            </a>
+            <a href="#">
+                <span class="fa-stack fa-2x">
+                    <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                    <i class="fa fa-linkedin fa-stack-1x"></i>
+                </span>
+            </a>
+            
+            
+            
+            
+            
+
+        </div>
+    </div>
+    <address>
+        <p><i class="fa fa-map-marker"></i> Address: Senate House, Malet St, Bloomsbury, London WC1E 7HU, United Kingdom</p>
+        <p><i class="fa fa-phone"></i> Phone Number: +44 (0)20 7862 8360</p>
+    </address>
+
 </footer>
 
 </body>
